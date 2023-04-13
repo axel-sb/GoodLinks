@@ -1,0 +1,19 @@
+{
+  "name": "goodlinks",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "latest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "wds --node-resolve --open --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parse-json": "^6.0.2"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.36"
+  }
+}

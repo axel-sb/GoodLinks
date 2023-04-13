@@ -1,0 +1,6 @@
+archive/
+node_modules/
+/.vscode
+notes.md
+favicon_io
+tempCodeRunner*

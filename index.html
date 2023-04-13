@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://stretchy.verou.me/dist/stretchy.iife.min.js" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <title>GoodLinks - Find Bookmark </title>
+  <!-- generic favicon 32x32 -->
+  <link rel="icon" type="image/x-icon" href="https://goodlinks.io/favicon.ico">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: .4em;
+      font-family: SF Pro Text;
+    }
+
+    h1 {
+      font-family: 'SF Pro Rounded';
+      flex: 1 1 100%;
+      position: relative;
+    }
+
+    h1::after {
+      content: ' x';
+      color: #d90202;
+      font-size: 2rem;
+      position: absolute;
+      left: 48.5rem;
+    }
+
+    img,
+    picture,
+    video,
+    canvas,
+    svg,
+    iframe {
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+
+    input {
+      font-size: 1.1rem;
+      border: none;
+      border-radius: .3rem;
+      box-shadow: 2px 2px 5px -1px #0003, 4px 4px 10px -2px #0001;
+      font-family: 'SF Pro';
+      line-height: 1.8;
+      padding: .1rem .3rem .1rem 0.5rem;
+      margin-right: 1rem;
+      background: #fff;
+    }
+
+    /* .............. custom styles ............. */
+    header {
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 50rem;
+      justify-content: space-between;
+    }
+
+    span {
+      flex: 1 1 auto;
+      padding-right: .3rem;
+    }
+
+    button {
+      font-family: SF Pro;
+      border-color: #0000;
+      background: none;
+    }
+
+    .resetBtn {
+      display: flex;
+      font-size: 1.1rem;
+      align-items: center;
+      color: #777;
+    }
+
+    .resetBtn button {
+      color: #333;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+
+    #reset:hover {
+      transform: rotate(300deg);
+      transition-duration: 500ms;
+    }
+
+
+    input[type="checkbox"] {
+      width: 1.4rem;
+      height: 1.4rem;
+      box-shadow: 1px 1px 1px 0px #0003;
+      background: #e3e2d7;
+      vertical-align: middle;
+    }
+
+    label {
+      font-size: 1.1rem;
+      color: #777;
+      vertical-align: middle;
+      padding: 0 0.4rem 0 0.7rem;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: #333;
+      padding: .5rem 0rem .3rem;
+    }
+
+    a::before {
+      content: "􀀀";
+      font-family: SF Pro;
+      font-size: .7rem;
+      font-weight: 800;
+      color: #333;
+      padding-right: .5rem;
+      position: relative;
+      top: -1px;
+    }
+
+    p {
+      display: flex;
+      padding: .3rem 0 .5rem 1.3rem;
+      font-size: .8rem;
+      font-weight: 400;
+      background: #0000;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .is-starred {
+      background: rgba(255, 234, 0, 0.207);
+    }
+
+    .is-hidden {
+      display: none;
+    }
+
+    /* .............. custom end .............. */
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 onclick="window.close()">Find Bookmark in GoodLinks</h1>
+    <p>
+      <input type="text" id="searchbox" placeholder="􀊫">
+      <!-- Tags -->
+      <label for="tag-filter-box">tagged</label>
+      <input type="text" id="tag-filter-box" placeholder="􀊫" size="10" value="">
+
+      <!-- <label for="tags-checkbox">tagged</label>
+      <input type="checkbox" id="tags-checkbox"> -->
+
+      <!-- Starred -->
+      <label for="starred-checkbox">starred</label>
+      <input type="checkbox" id="starred-checkbox">
+    </p>
+    <div class="resetBtn">
+      <span>reset</span>
+      <button id="reset">􀊯</button>
+    </div>
+  </header>
+  <ul></ul>
+
+
+  <script>
+
+  </script>
+  <script src="latest.js" type="module"></script>
+  <script>dayjs().format()</script>
+</body>
+
+</html>
